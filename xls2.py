@@ -284,8 +284,6 @@ def parse_numbers_to_ranges(numbers):
 
 
 # function to get video duration in time code format using ffprobe
-
-
 def get_video_duration_timecode(video_file):
     try:
         # Run ffprobe and capture stdout
