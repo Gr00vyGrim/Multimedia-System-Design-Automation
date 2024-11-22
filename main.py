@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 from frameioclient import FrameioClient
 
-'''I left off trying to get this to work. '''
+''' Process baselight file '''
 def process_baselight_file(file_path):
     try:
         with open(file_path, 'r') as file:
@@ -805,13 +805,11 @@ def main():
         # Save the workbook to an Excel file
         workbook.save(export_file)
 
-        # TOKEN = 'fio-u-vQBjA1fBTMQ2Av4Te1W4J_2smh2TghAOHmA8BMOrFrepuZwhwIsTu4hJwsRCWESd'
-        TOKEN = 'fio-u-cIxFl6PN1Zq58thXgLCP_Lo1nNhPG6jReNHHtjPgv4u0-GH7yJMJ0eNIjGZEwf_3' # (m token) 
+        # For own use make sure you change the token generated in Frameio
+        TOKEN = 'fio-u-vQBjA1fBTMQ2Av4Te1W4J_2smh2TghAOHmA8BMOrFrepuZwhwIsTu4hJwsRCWESd'
         client = FrameioClient(TOKEN) 
-        # project_id = '2c9a70a0-2b6b-4edf-87b3-a1f4dd342975' # this is the original one 
-        # project_id = '169dd196-be54-4820-8303-a5954c031e26' # test project to make sure it is working 
-        # project_id = '3e2dc8b0-9b45-4c52-8898-9f5bd43f301e' # this is the original one
-        project_id = '48e989e8-1c4e-479d-a13d-ba0d1896898e' # (m destination) 
+        project_id = '2c9a70a0-2b6b-4edf-87b3-a1f4dd342975' # this is the original one 
+        
 
 
         folder_id = client.projects.get(project_id)['root_asset_id']
