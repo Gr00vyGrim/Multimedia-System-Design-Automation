@@ -14,6 +14,10 @@ This project processes video files, extracts metadata and thumbnails, and export
    - Example:
      ```bash
      python3 main.py --process twitch_nft_demo.mp4 --output XLS
+
+     python3 main.py --files import_files/Baselight_JJacobs_20230323.txt import_files/Flame_MFelix_20230323.txt import_files/Flame_DFlowers_20230323.txt --xytech import_files/Xytech_20230323.txt --verbose
+     python3 main.py --files Baselight_JJacobs_20230323.txt Flame_MFelix_20230323.txt Flame_DFlowers_20230323.txt --xytech Xytech_20230323.txt --verbose
+
      ```
 
 3. **Populate Database**
