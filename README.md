@@ -73,7 +73,7 @@ Download and install FFmpeg from [https://ffmpeg.org/download.html](https://ffmp
 
 ### Example Command
 ```bash
-python3 cmain.py --process twitch_nft_demo.mp4 --output XLS
+python3 main.py --process twitch_nft_demo.mp4 --output XLS
 ```
 
 ---
